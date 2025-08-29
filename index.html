@@ -1,55 +1,5 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>포트폴리오 – 복지·교육 리더</title>
-  <meta name="description" content="복지·후생 및 생산직 교육/컨소시엄 리더의 데이터 기반 성과와 케이스스터디">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- 다국어 지원 -->
-  <link rel="alternate" hreflang="ko" href="index.html">
-  <link rel="alternate" hreflang="en" href="en/index.html">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="포트폴리오 – 복지·교육 리더">
-  <meta property="og:description" content="데이터 기반 복지·교육 프로젝트와 성과를 소개합니다.">
-  <meta property="og:image" content="img/og.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourdomain.com/">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="포트폴리오 – 복지·교육 리더">
-  <meta name="twitter:description" content="복지·후생 및 생산직 교육/컨소시엄 리더의 성과와 프로젝트">
-  <meta name="twitter:image" content="img/og.png">
-
-  <!-- GA4 (실제 Measurement ID로 교체 필요) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config','G-XXXX');
-  </script>
-</head>
-<body>
-<header>
-  <div class="nav" role="navigation" aria-label="주요 메뉴">
-    <a class="logo" href="index.html">Welfare·Training</a>
-    <nav>
-      <a href="index.html">홈</a>
-      <a href="projects.html">프로젝트</a>
-      <a href="downloads.html">자료실</a>
-      <a href="contact.html">문의</a>
-      <a class="lang-switch" href="en/index.html">EN</a>
-    </nav>
-  </div>
-</header>
-
 <main>
+  <!-- 기존 Hero 섹션 -->
   <section class="hero" aria-labelledby="hero-title">
     <div>
       <h1 id="hero-title">데이터와 거버넌스로 사람을 연결하는<br>복지·교육 리더</h1>
@@ -81,6 +31,32 @@
     </div>
   </section>
 
+  <!-- ✅ 새로 추가된 About Me 섹션 -->
+  <section id="about" aria-labelledby="about-title" style="padding:60px 20px; background:#0f172a;">
+    <div style="max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; gap:30px; align-items:center;">
+      <div style="flex:1; text-align:center;">
+        <img src="img.jpg" alt="프로필 사진 - 고양이" 
+             style="max-width:220px; border-radius:50%; border:3px solid #10b981;">
+      </div>
+      <div style="flex:2; color:#e5e7eb;">
+        <h2 id="about-title">About Me</h2>
+        <p><strong>박수연</strong> – Welfare & Training Leader</p>
+        <p>
+          복지 후생 및 생산직 교육/컨소시엄 업무를 담당하며, 현재 팀장 및 원장의 직위를 보유하고 있습니다. 
+          10년 이상의 경력을 바탕으로 대규모 행사 운영, 복지제도 기획, 산학 협력 및 정부 환급 프로그램까지 
+          다양한 프로젝트를 성공적으로 이끌어 왔습니다.
+        </p>
+        <ul>
+          <li>💼 복지·후생 제도 기획 및 운영</li>
+          <li>🎓 생산직 교육 및 컨소시엄 협력</li>
+          <li>📊 데이터 기반 KPI 관리 및 성과 분석</li>
+          <li>🤝 산학·정부 파트너십 구축</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 기존 Featured Projects 섹션 -->
   <section aria-labelledby="featured">
     <h2 id="featured">대표 프로젝트</h2>
     <div id="project-list" class="grid" aria-live="polite"></div>
@@ -88,14 +64,4 @@
   </section>
 </main>
 
-<footer>
-  <p>© 2025 Welfare & Training Portfolio. All rights reserved.</p>
-  <nav aria-label="푸터 링크">
-    <a href="privacy.html">개인정보 처리방침</a> |
-    <a href="#hero-title">맨 위로</a>
-  </nav>
-</footer>
 
-<script src="main.js" defer></script>
-</body>
-</html>
